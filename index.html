@@ -1,0 +1,214 @@
+<!-- SEE THE ENTIRE PROJECT TUTORIAL ONCE AGAIN -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Museum of Candy</title>
+</head>
+
+<body>
+    <!-- navbar: [critical] Without this the navbar becomes a thin line and the collapse(expand) button and brand come side by side instead of being on opposite ends
+        navbar-dark:[critical] Without this the collapse icon disappears and the navbrand becomes a normal anchor tag
+        bg-dark: gives standard dark color to navbar
+        navbar-expand-md: the collapse/expand button shows up when the width of the browser goes any size below medium 
+    
+        navbar-brand: used for brand names
+    
+        navbar-toggler: used for toggle features
+    
+        data-target(in button) and id(in div class) are used to connectthe button and div class to each other
+
+        py-0 : makes the padding on the top and bottom y axis as 0,alternatively we could do
+        pt-0 pb-0
+        class="fixed-top" ensures the navbar stays on top even when we scroll down to the 
+        bottom of the page
+        -->
+    <nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">CANDY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">TICKETS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- **************************************************** -->
+    <!-- CONTAINER NO 1 -->
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <!-- we only want these to be column 6 at size large -->
+            <div class="col-lg-6">
+                <!-- d-none: don't display this div tag on all screen sized
+                d-lg-block: display this div tag on screen sized large and up 
+                mt-5: margin-top-5-->
+                <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                    <h2 class="">MUSEUM <span> /</span> OF<span> /</span> CANDY</h2>
+                </div>
+
+
+            </div>
+            <div class="col-lg-6">
+                <!-- To make images responsive we use img fluid class
+                ,it gets the image to scale to the parent element with max-width at 100%
+                and height is auto -->
+                <img class="img-fluid" src="imgs/hand2.png" alt="handwithdonut">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTAINER NO 2 -->
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <!-- we only want these to be column 6 at size large -->
+            <div class="col-md-6 order-2 order-md-1">
+
+                <img class="img-fluid" src="imgs/milk.png" alt="milk">
+
+            </div>
+            <!-- this has to show on first on medium and up sizes
+            and it has to show second on screen sizes medium and down -->
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="text-center">MUSEUM OF CANDY</h2>
+                        <!-- align items for certical space and justify content for horizontal space -->
+                        <div class="align-items-center">
+                            <img src="imgs/lolli_icon.png" alt="lollipop" class="d-none d-lg-inline">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid odio quas fuga? Eos consequuntur cumque debitis quasi perspiciatis ullam.
+                                Repellat recusandae excepturi exercitationem nemo odio veniam reprehenderit fuga
+                                necessitatibus.
+                                Harum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe rerum mollitia
+                                exercitationem illum! Labore iusto sit dolores commodi dignissimos dolore.
+                                Exercitationem dolore illum sit est, voluptate distinctio esse mollitia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <!-- we only want these to be column 6 at size large -->
+            <div class="col-md-6 order-1 order-md-2">
+
+                <img class="img-fluid" src="imgs/gumball.png" alt="milk">
+
+            </div>
+            <div class="col-md-6 text-center order-2 order-md-1">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="text-center">MUSEUM OF CANDY</h2>
+                        <!-- align items for certical space and justify content for horizontal space -->
+                        <div class="align-items-center">
+                            <img src="imgs/lolli_icon.png" alt="lollipop" class="d-none d-lg-inline">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid odio quas fuga? Eos consequuntur cumque debitis quasi perspiciatis ullam.
+                                Repellat recusandae excepturi exercitationem nemo odio veniam reprehenderit fuga
+                                necessitatibus.
+                                Harum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe rerum mollitia
+                                exercitationem illum! Labore iusto sit dolores commodi dignissimos dolore.
+                                Exercitationem dolore illum sit est, voluptate distinctio esse mollitia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <!-- we only want these to be column 6 at size large -->
+            <div class="col-md-6 order-2 order-md-1">
+
+                <img class="img-fluid" src="imgs/sprinkles.png" alt="milk">
+
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="text-center">MUSEUM OF CANDY</h2>
+                        <!-- align items for certical space and justify content for horizontal space -->
+                        <div class="align-items-center">
+                            <img src="imgs/lolli_icon.png" alt="lollipop" class="d-none d-lg-inline">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid odio quas fuga? Eos consequuntur cumque debitis quasi perspiciatis ullam.
+                                Repellat recusandae excepturi exercitationem nemo odio veniam reprehenderit fuga
+                                necessitatibus.
+                                Harum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe rerum mollitia
+                                exercitationem illum! Labore iusto sit dolores commodi dignissimos dolore.
+                                Exercitationem dolore illum sit est, voluptate distinctio esse mollitia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            })
+
+        })
+    </script>
+</body>
+
+</html>
